@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5200D9ED2B1DBF9D000C78B3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5200D9EC2B1DBF9D000C78B3 /* StoreKit.framework */; };
+		521B3C792AFCA562003CD142 /* iOSPaymentGatwayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521B3C782AFCA562003CD142 /* iOSPaymentGatwayApp.swift */; };
+		521B3C7B2AFCA562003CD142 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521B3C7A2AFCA562003CD142 /* ContentView.swift */; };
+		521B3C7D2AFCA563003CD142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521B3C7C2AFCA563003CD142 /* Assets.xcassets */; };
+		521B3C802AFCA563003CD142 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521B3C7F2AFCA563003CD142 /* Preview Assets.xcassets */; };
+		523F36B62B04B8F1008AE3CE /* AmountBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F36B52B04B8F1008AE3CE /* AmountBox.swift */; };
+		523F36B82B04B93A008AE3CE /* PaymentIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F36B72B04B93A008AE3CE /* PaymentIntent.swift */; };
+		523F36BA2B04B9AA008AE3CE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F36B92B04B9AA008AE3CE /* Helper.swift */; };
+		523F36BC2B04BA75008AE3CE /* paymetReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F36BB2B04BA75008AE3CE /* paymetReq.swift */; };
+		523F36BE2B04BABD008AE3CE /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F36BD2B04BABD008AE3CE /* PaymentModel.swift */; };
+		52B990E22AFCE33E0092728C /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B990E12AFCE33E0092728C /* ApiService.swift */; };
+		558687F3E6FE18C8A0CC382B /* Pods_iOSPaymentGatway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96AFBD6EB07DB3A17466F46 /* Pods_iOSPaymentGatway.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15D9C0EFDF4C4FFB37511DDA /* Pods-iOSPaymentGatway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPaymentGatway.debug.xcconfig"; path = "Target Support Files/Pods-iOSPaymentGatway/Pods-iOSPaymentGatway.debug.xcconfig"; sourceTree = "<group>"; };
+		5200D9EC2B1DBF9D000C78B3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		521B3C752AFCA562003CD142 /* iOSPaymentGatway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPaymentGatway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		521B3C782AFCA562003CD142 /* iOSPaymentGatwayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPaymentGatwayApp.swift; sourceTree = "<group>"; };
+		521B3C7A2AFCA562003CD142 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		521B3C7C2AFCA563003CD142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		521B3C7F2AFCA563003CD142 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		523F36B42B04A482008AE3CE /* iOSPaymentGatway.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSPaymentGatway.entitlements; sourceTree = "<group>"; };
+		523F36B52B04B8F1008AE3CE /* AmountBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountBox.swift; sourceTree = "<group>"; };
+		523F36B72B04B93A008AE3CE /* PaymentIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentIntent.swift; sourceTree = "<group>"; };
+		523F36B92B04B9AA008AE3CE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		523F36BB2B04BA75008AE3CE /* paymetReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymetReq.swift; sourceTree = "<group>"; };
+		523F36BD2B04BABD008AE3CE /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		52B990E12AFCE33E0092728C /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		5F5CA2E0593EA797B9C8B4E1 /* Pods-iOSPaymentGatway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPaymentGatway.release.xcconfig"; path = "Target Support Files/Pods-iOSPaymentGatway/Pods-iOSPaymentGatway.release.xcconfig"; sourceTree = "<group>"; };
+		E96AFBD6EB07DB3A17466F46 /* Pods_iOSPaymentGatway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPaymentGatway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		521B3C722AFCA562003CD142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558687F3E6FE18C8A0CC382B /* Pods_iOSPaymentGatway.framework in Frameworks */,
+				5200D9ED2B1DBF9D000C78B3 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F49D9B5348F8D6A6EFBE5CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5200D9EC2B1DBF9D000C78B3 /* StoreKit.framework */,
+				E96AFBD6EB07DB3A17466F46 /* Pods_iOSPaymentGatway.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		521B3C6C2AFCA562003CD142 = {
+			isa = PBXGroup;
+			children = (
+				521B3C772AFCA562003CD142 /* iOSPaymentGatway */,
+				521B3C762AFCA562003CD142 /* Products */,
+				E4D1B72658B904F5A54D5B1B /* Pods */,
+				0F49D9B5348F8D6A6EFBE5CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		521B3C762AFCA562003CD142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				521B3C752AFCA562003CD142 /* iOSPaymentGatway.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		521B3C772AFCA562003CD142 /* iOSPaymentGatway */ = {
+			isa = PBXGroup;
+			children = (
+				523F36B42B04A482008AE3CE /* iOSPaymentGatway.entitlements */,
+				521B3C782AFCA562003CD142 /* iOSPaymentGatwayApp.swift */,
+				521B3C7A2AFCA562003CD142 /* ContentView.swift */,
+				521B3C7C2AFCA563003CD142 /* Assets.xcassets */,
+				52B990E12AFCE33E0092728C /* ApiService.swift */,
+				521B3C7E2AFCA563003CD142 /* Preview Content */,
+				523F36B52B04B8F1008AE3CE /* AmountBox.swift */,
+				523F36B72B04B93A008AE3CE /* PaymentIntent.swift */,
+				523F36B92B04B9AA008AE3CE /* Helper.swift */,
+				523F36BB2B04BA75008AE3CE /* paymetReq.swift */,
+				523F36BD2B04BABD008AE3CE /* PaymentModel.swift */,
+			);
+			path = iOSPaymentGatway;
+			sourceTree = "<group>";
+		};
+		521B3C7E2AFCA563003CD142 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				521B3C7F2AFCA563003CD142 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4D1B72658B904F5A54D5B1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15D9C0EFDF4C4FFB37511DDA /* Pods-iOSPaymentGatway.debug.xcconfig */,
+				5F5CA2E0593EA797B9C8B4E1 /* Pods-iOSPaymentGatway.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		521B3C742AFCA562003CD142 /* iOSPaymentGatway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521B3C832AFCA563003CD142 /* Build configuration list for PBXNativeTarget "iOSPaymentGatway" */;
+			buildPhases = (
+				EBBF2B37047B02943921329C /* [CP] Check Pods Manifest.lock */,
+				521B3C712AFCA562003CD142 /* Sources */,
+				521B3C722AFCA562003CD142 /* Frameworks */,
+				521B3C732AFCA562003CD142 /* Resources */,
+				9B72269008150A6EF9084E68 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSPaymentGatway;
+			productName = iOSPaymentGatway;
+			productReference = 521B3C752AFCA562003CD142 /* iOSPaymentGatway.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		521B3C6D2AFCA562003CD142 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					521B3C742AFCA562003CD142 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 521B3C702AFCA562003CD142 /* Build configuration list for PBXProject "iOSPaymentGatway" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 521B3C6C2AFCA562003CD142;
+			productRefGroup = 521B3C762AFCA562003CD142 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				521B3C742AFCA562003CD142 /* iOSPaymentGatway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		521B3C732AFCA562003CD142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521B3C802AFCA563003CD142 /* Preview Assets.xcassets in Resources */,
+				521B3C7D2AFCA563003CD142 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B72269008150A6EF9084E68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSPaymentGatway/Pods-iOSPaymentGatway-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSPaymentGatway/Pods-iOSPaymentGatway-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSPaymentGatway/Pods-iOSPaymentGatway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBBF2B37047B02943921329C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSPaymentGatway-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		521B3C712AFCA562003CD142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523F36B82B04B93A008AE3CE /* PaymentIntent.swift in Sources */,
+				521B3C7B2AFCA562003CD142 /* ContentView.swift in Sources */,
+				521B3C792AFCA562003CD142 /* iOSPaymentGatwayApp.swift in Sources */,
+				52B990E22AFCE33E0092728C /* ApiService.swift in Sources */,
+				523F36BE2B04BABD008AE3CE /* PaymentModel.swift in Sources */,
+				523F36BC2B04BA75008AE3CE /* paymetReq.swift in Sources */,
+				523F36B62B04B8F1008AE3CE /* AmountBox.swift in Sources */,
+				523F36BA2B04B9AA008AE3CE /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		521B3C812AFCA563003CD142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		521B3C822AFCA563003CD142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		521B3C842AFCA563003CD142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D9C0EFDF4C4FFB37511DDA /* Pods-iOSPaymentGatway.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSPaymentGatway/iOSPaymentGatway.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSPaymentGatway/Preview Content\"";
+				DEVELOPMENT_TEAM = RSWZ8MVF9V;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSPaymentGatway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		521B3C852AFCA563003CD142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F5CA2E0593EA797B9C8B4E1 /* Pods-iOSPaymentGatway.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSPaymentGatway/iOSPaymentGatway.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSPaymentGatway/Preview Content\"";
+				DEVELOPMENT_TEAM = RSWZ8MVF9V;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSPaymentGatway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		521B3C702AFCA562003CD142 /* Build configuration list for PBXProject "iOSPaymentGatway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521B3C812AFCA563003CD142 /* Debug */,
+				521B3C822AFCA563003CD142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521B3C832AFCA563003CD142 /* Build configuration list for PBXNativeTarget "iOSPaymentGatway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521B3C842AFCA563003CD142 /* Debug */,
+				521B3C852AFCA563003CD142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 521B3C6D2AFCA562003CD142 /* Project object */;
+}
